@@ -90,6 +90,7 @@ body.dark-mode .todo-container {
 /* 📝 Input Field */
 .todo-input {
   width: 80%;
+  margin-bottom: 0.5rem;
   padding: 12px;
   border: 2px solid #d1d1d6;
   border-radius: 10px;
