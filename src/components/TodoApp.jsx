@@ -3,11 +3,11 @@ import { useTodo } from "../context/TodoContext";
 
 export default function TodoApp() {
   const [text, setText] = useState("");
-  const { todo, addTodo, removeTodo } = useTodo();
+  const { todo, addTodos, removeTodo } = useTodo();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addTodo(text);
+    addTodos(text);
     setText("");
   };
 
@@ -19,9 +19,9 @@ export default function TodoApp() {
         <button type="submit">Add Todo</button>
       </form>
       <ul>
-        {todo.map((todo, index) => (
-          <li key={index}>
-            {todo.text} <button onClick={() => removeTodo(todo.index)}>Delete</button>
+        {todo.map((todo, id) => (
+          <li key={id}>
+            {todo.text} <button onClick={() => removeTodo(todo.id)}>Delete</button>
           </li>
         ))}
       </ul>

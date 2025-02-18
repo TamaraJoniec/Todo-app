@@ -6,16 +6,16 @@ export function TodoProvider({ children }) {
   const [todo, setTodo] = useState([]);
 
   //Function to add a new to do
-  const addTodo = (text) => {
-    setTodo([...todo, { text }]);
+  const addTodos = (text) => {
+    setTodo((prevTodos) => [...prevTodos, { id: Date.now(), text }]);
   };
 
   //Function to delete a to do
   const removeTodo = (id) => {
-    setTodo(todo.filter((todo) => todo.id !== id));
+    setTodo((prevTodos) => prevTodos.filter((todo) => todo.id !== id));
   };
 
-  return <TodoContext.Provider value={{ todo, addTodo, removeTodo }}>{children}</TodoContext.Provider>;
+  return <TodoContext.Provider value={{ todo, addTodos, removeTodo }}>{children}</TodoContext.Provider>;
 }
 
 export function useTodo() {
