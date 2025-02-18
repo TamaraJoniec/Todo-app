@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTodo } from "../context/TodoContext";
+import "../styles/todo.css";
 
 export default function TodoApp() {
   const [text, setText] = useState("");
@@ -12,16 +13,21 @@ export default function TodoApp() {
   };
 
   return (
-    <div>
-      <h1>Todo App</h1>
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
-        <button type="submit">Add Todo</button>
+    <div className="todo-container">
+      <h1 className="title">Todo App</h1>
+      <form onSubmit={handleSubmit} className="todo-form">
+        <input type="text" value={text} onChange={(e) => setText(e.target.value)} className="todo-input" />
+        <button type="submit" className="add-btn">
+          Add Todo
+        </button>
       </form>
-      <ul>
+      <ul className="todo-list">
         {todo.map((todo, id) => (
-          <li key={id}>
-            {todo.text} <button onClick={() => removeTodo(todo.id)}>Delete</button>
+          <li key={id} className="todo-item">
+            {todo.text}{" "}
+            <button onClick={() => removeTodo(todo.id)} className="delete-btn">
+              Delete
+            </button>
           </li>
         ))}
       </ul>

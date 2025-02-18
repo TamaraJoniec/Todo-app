@@ -1,0 +1,148 @@
+/* 🏠 Todo Container */
+.todo-container {
+  background: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease-in-out;
+}
+
+body.dark-mode .todo-container {
+  background: #2c2c2e;
+}
+
+/* 📝 Input Field */
+.todo-input {
+  width: 80%;
+  padding: 12px;
+  border: 2px solid #d1d1d6;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.todo-input:focus {
+  border-color: #007aff;
+}
+
+/* ➕ Add Button */
+.add-btn {
+  background: #007aff;
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: opacity 0.3s;
+}
+
+.add-btn:hover {
+  opacity: 0.9;
+}
+
+/* 📜 Todo List */
+.todo-list {
+  margin-top: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0f0f3;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+body.dark-mode .todo-item {
+  background: #3a3a3c;
+}
+
+/* ❌ Delete Button */
+.delete-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+}
+/* 🏠 Todo Container */
+.todo-container {
+  background: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease-in-out;
+}
+
+body.dark-mode .todo-container {
+  background: #2c2c2e;
+}
+
+/* 📝 Input Field */
+.todo-input {
+  width: 80%;
+  padding: 12px;
+  border: 2px solid #d1d1d6;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.todo-input:focus {
+  border-color: #007aff;
+}
+
+/* ➕ Add Button */
+.add-btn {
+  background: #007aff;
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: opacity 0.3s;
+}
+
+.add-btn:hover {
+  opacity: 0.9;
+}
+
+/* 📜 Todo List */
+.todo-list {
+  margin-top: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0f0f3;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+body.dark-mode .todo-item {
+  background: #3a3a3c;
+}
+
+/* ❌ Delete Button */
+.delete-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+}
